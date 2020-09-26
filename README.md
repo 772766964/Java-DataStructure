@@ -32,4 +32,20 @@
 ```
 ## 链接
 <https://www.baidu.com>  
-[百度](https://www.baidu.com)
+[百度](https://www.baidu.com)  
+### 高级些链接
+[菜鸟教程][1]  
+[网易云qq][2]  
+然后在文档的结尾为变量赋值（网址）
+## 表格
+|  表头   | 表头  |
+| :- | -:|
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
+## [Markdown 高级技巧][skill]
+
+
+  [1]: http://www.runoob.com/markdown/md-link.html/
+  [2]: http://music.163.com/#/discover/
+  [skill] :https://www.runoob.com/markdown/md-advance.html/
