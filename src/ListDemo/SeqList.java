@@ -119,6 +119,6 @@ public class SeqList<T> implements ListDemo<T>{
 
     @Override
     public T remove(T key) {
-        return null;
+        return this.remove(search(key));
     }
 }
