@@ -10,4 +10,5 @@ public interface ListDemo<T> {
     T remove(int i);
     void clear();   //删除所有元素；
     int search(T key);
+    T remove(T key);
 }

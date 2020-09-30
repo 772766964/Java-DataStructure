@@ -1,6 +1,8 @@
 package ListDemo;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class SeqList<T> implements ListDemo<T>{
     private int n;
@@ -12,6 +14,7 @@ public class SeqList<T> implements ListDemo<T>{
      }
 
      public  SeqList(int length){
+         LinkedList as = new LinkedList();
          element = new Object[length];
          n = 0;
      }
@@ -50,7 +53,7 @@ public class SeqList<T> implements ListDemo<T>{
 
     @Override
     public T get(int i) {
-         if(i > 0 && i < element.length)
+         if(i >= 0 && i < element.length)
              return (T) element[i];
          return null;
     }
@@ -111,5 +114,11 @@ public class SeqList<T> implements ListDemo<T>{
          for(int i = 0 ; i <= element.length ; i++){
              return element[i] == key ? i : -1 ;
          }
+         return -1;
+    }
+
+    @Override
+    public T remove(T key) {
+        return null;
     }
 }
