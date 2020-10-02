@@ -53,10 +53,10 @@ public class SinglyList<T> implements ListDemo {
 
     @Override
     public int insert(int i, Object x) {
-        if(x == null)
+        if( x == null )
             return -1;
         Node<T> p = this.head;
-        if(i == 0 && x != null){
+        if( i == 0 ){
             p = new Node<T>((T)x,this.head.next);
             this.head = p;
             return i;
@@ -64,6 +64,7 @@ public class SinglyList<T> implements ListDemo {
         for (int j = 1; j < i && p != null; j++) {
             p = p.next;
         }
+        return -1;
         //////////////////////////////////////////////////
     }
 
