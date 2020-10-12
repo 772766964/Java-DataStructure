@@ -14,4 +14,5 @@ public class Node<T> {
         this.date = date;
         this.next = next;
     }
+
 }

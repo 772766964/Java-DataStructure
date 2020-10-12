@@ -117,4 +117,27 @@ public class SinglyList<T> {
         }
         return str.toString();
     }
+
+    public void reserve(){
+        Node<T> p = this.head.next   ,   q;
+        this.head.next = null;
+        while(p != null)
+        {
+            q=p.next;
+            p.next = this.head.next;
+            this.head.next = p;
+            p=q;
+        }
+    }
+
+    public void reverse1(){
+        Node<T> p = this.head.next,succ = null , front = null;
+        while(p != null) {
+            succ = p.next;
+            p.next = front;
+            front = p;
+            p = succ;
+        }
+        this.head.next = front;
+    }
 }
