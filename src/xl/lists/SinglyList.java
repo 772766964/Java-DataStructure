@@ -1,10 +1,13 @@
-package ListDemo;
+package xl.lists;
 
-import java.lang.*;
+import ListDemo.Node;
 
 /**
- * @author 1
- */
+ * @ClassName SinglyList
+ * @Description TODO
+ * @Author 1
+ * @Date 2020/10/22
+ **/
 public class SinglyList<T extends Comparable> {
     public Node<T> head;
 
@@ -133,7 +136,7 @@ public class SinglyList<T extends Comparable> {
         }
     }
 
-    public void Reverse1(SinglyList<T> L) {
+    public void Reverse1(ListDemo.SinglyList<T> L) {
         Node<T> p = L.head.next, q;
         L.head.next = null;
         while (p != null) {
@@ -144,7 +147,7 @@ public class SinglyList<T extends Comparable> {
         }
     }
 
-    public <T extends Comparable> void Reverse2(SinglyList<T> L) {
+    public <T extends Comparable> void Reverse2(ListDemo.SinglyList<T> L) {
         Node<T> p = L.head.next, succ = null, front = null;
         while (p != null) {
             succ = p.next;
@@ -155,7 +158,7 @@ public class SinglyList<T extends Comparable> {
         L.head.next = front;
     }
 
-    public Node<T> merge(SinglyList list2) {
+    public Node<T> merge(ListDemo.SinglyList list2) {
         Node<T> p, t, q;
         t = this.head;
         p = this.head.next;
@@ -186,7 +189,7 @@ public class SinglyList<T extends Comparable> {
         }
         return null;
     }
-    public Node<T> erwei(SinglyList list2) {
+    public Node<T> erwei(ListDemo.SinglyList list2) {
         Node<T> p, t, q;
         t = this.head;
         p = this.head.next;
